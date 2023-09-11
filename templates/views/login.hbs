@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{>links}}
+</head>
+
+<body>
+    {{>navbar}}
+    <div class="container">
+
+        <form action="/register" method="post" id="register">
+            <h1>Sign up</h1>
+            {{!-- <div class="line"> --}}
+            <label for="name">First Name</label>                
+            <input type="text" name="firstname" id="name">
+            {{!-- </div> --}}
+            {{!-- <div class="line"> --}}
+            <label for="lname">Last Name</label>
+            <input type="text" name="lastname" id="lname">
+            {{!-- </div> --}}
+            {{!-- <div class="line"> --}}
+            <label for="eamil">Email</label>
+            <input type="email" name="email" id="email">
+            {{!-- </div> --}}
+            {{!-- <div class="line"> --}}
+            <label for="cpassword">Create Password</label>
+            <input type="password" name="crtpassword" id="cpassword">
+            {{!-- </div> --}}
+            {{!-- <div class="line"> --}}
+            <label for="password">Confirm Password</label>
+            <input type="password" name="cnfpassword" id="password">
+            {{!-- </div> --}}
+            <div class="btn">
+                <button type="submit">Sign Up</button>
+            </div>
+            <div class="login_signup">Allready have an account? <a href="/login" id="Sign in">Sing in</a></div>
+
+        </form>
+    </div>
+
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+</body>
+
+</html>

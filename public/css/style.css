@@ -1,0 +1,138 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+}
+.logo h2{
+    color: cadetblue;
+    padding: 4px 17px;
+}
+
+ul{
+    display: flex;
+    margin: 4px 9px;
+    padding: 5px 10px;
+}
+ul .box {
+    margin: 4px 10px;
+    list-style: none;
+}
+ul .box a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: all 1s ease-out;
+    position: relative;
+}
+ul .box a::after{
+    content: "";
+    position: absolute;
+    top: 22px;
+    left: 0px;
+    height: 3px;
+    background-color: white;
+    width: 0%;
+    transition: all .8s ease-in-out;
+}
+ul .box a:hover::after{
+    width: 100%;
+}
+ul .box a:hover{
+    color: red;
+    border: block;
+    border-width: 10px ;
+}
+
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    background-color: burlywood;
+}
+section h1{
+    margin: 10px 20px;
+    font-size: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    border-bottom: 3px solid royalblue;
+    position: relative;
+    bottom: 10%;
+}
+section p{
+    font-weight: bold;
+    font-size: 17px;
+    margin: 10px 30px;
+    text-align: center;
+    width: 81%;
+    position: relative;
+    bottom: 8%;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background-color: bisque;
+}
+.container form{
+    width: 50%;
+    height: 60vh;
+    border: 2px solid black;
+    padding: 9px 10px;
+}
+form h1{
+    margin: 7px 11px;
+    padding: 3px 15px;
+    border-bottom: 2px solid lightcoral;
+    color: cadetblue;
+    text-align: center;
+    margin-bottom: 23px;
+}
+form input{
+    padding: 0px 5px;
+    margin: 12px 2px;
+    width: 39%;
+}
+#password{
+    margin: 0px;
+}
+#register{
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+}
+#forget{
+    display: block;
+    text-align: end;
+    margin: 6px 17px;
+    font-size: 14px;
+    padding: 4px 14px;
+}
+.btn{
+    margin: 6px 1px;
+    margin-right: 26px;
+}
+.btn button{
+    cursor: pointer;
+    width: 100%;
+    padding: 2px 5px;
+}
+
+
+.line{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}

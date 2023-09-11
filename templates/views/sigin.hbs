@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{>links}}
+</head>
+<body>
+    {{>navbar}}
+
+        <div class="container">
+
+        <form action="/login" method="post">
+            <h1>Sign in</h1>
+            <span id="invalid"></span>
+            <label for="eamil">Email</label>
+            <input type="email" name="email" id="email">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password">
+            <a href="#" id="forget">Forgot password</a>
+            <div class="btn">
+                <button type="submit" class="btnregister" value="registerd">Log in</button>
+            </div>
+
+            <div class="login_signup">Don't have an account? <a href="/register" id="signup">Singup</a></div>
+        </form>
+    </div>
+</body>
+</html>
